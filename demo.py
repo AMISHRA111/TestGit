@@ -183,7 +183,7 @@ def function4():
     print("Elapsed Time1 = {0}".format(elapsed1 - start1))
     start2 = datetime.datetime.now()
 
-    button10 = driver.find_element_by_xpath("//span[contains(text(),'Last Month')]").click()
+    button10 = driver.find_element_by_xpath("//span[contains(text(),'Last Week')]").click()
 
     timeout = time.time() + 60 * 2
     while len(driver.find_elements_by_css_selector("path[class='area areaChart']")) != 19:
